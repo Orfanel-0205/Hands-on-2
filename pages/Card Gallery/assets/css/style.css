@@ -60,7 +60,7 @@ body, html {
     justify-content: center;
     padding: 20px;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 1px;
     text-decoration: none;
     color: #333;
     transition: transform 0.3s, background 0.3s;
@@ -76,7 +76,8 @@ body, html {
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 55%;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
