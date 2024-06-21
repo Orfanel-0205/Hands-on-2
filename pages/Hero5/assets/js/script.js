@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const hero = document.querySelector('.hero');
 
     
-    let colors = ['#8bc34a', '#33691e', '#558b2f', '#689f38'];
+    let colors = ['#1b1b1b', '#4e4e4e', '#303030', '#595959'];
     let currentColor = 0;
 
     function changeBackground() {

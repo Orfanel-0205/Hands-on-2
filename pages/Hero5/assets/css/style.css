@@ -37,17 +37,17 @@ body, html {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to bottom right, #8bc34a, #33691e);
+    background: linear-gradient(to bottom right, #1b1b1b, #4e4e4e);
     color: #fff;
     animation: backgroundAnimation 10s infinite alternate;
 }
 
 @keyframes backgroundAnimation {
     0% {
-        background: linear-gradient(to bottom right, #8bc34a, #33691e);
+        background: linear-gradient(to bottom right, #1b1b1b, #4e4e4e);
     }
     100% {
-        background: linear-gradient(to bottom right, #33691e, #8bc34a);
+        background: linear-gradient(to bottom right, #4e4e4e, #1b1b1b);
     }
 }
 
