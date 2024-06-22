@@ -43,7 +43,7 @@ h1 {
 }
 
 .hero-section {
-    background: url('/assets/img/s-l1200 (1).jpg') no-repeat center center/cover;
+    background: url('./assets/img/s-l1200 (1).jpg') no-repeat center center/cover;
     padding: 20px;
     min-height: 100vh;
     display: flex;
