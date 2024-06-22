@@ -3,8 +3,9 @@ body, html {
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background-color: #e0f7fa;
     overflow: hidden;
+    height: 100%;
+    background-color: #e0f7fa;
 }
 .breadcrumb {
     display: flex;
@@ -37,18 +38,9 @@ body, html {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to bottom right, #1b1b1b, #4e4e4e);
+    background: url('/assets/img/2095d63e84c71c306b6c18af555e59e1.jpg') no-repeat center center;
+    background-size: cover;
     color: #fff;
-    animation: backgroundAnimation 10s infinite alternate;
-}
-
-@keyframes backgroundAnimation {
-    0% {
-        background: linear-gradient(to bottom right, #1b1b1b, #4e4e4e);
-    }
-    100% {
-        background: linear-gradient(to bottom right, #4e4e4e, #1b1b1b);
-    }
 }
 
 .content {

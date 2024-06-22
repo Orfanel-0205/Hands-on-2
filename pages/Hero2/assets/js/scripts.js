@@ -10,5 +10,5 @@ document.addEventListener("DOMContentLoaded", function() {
         hero.style.background = `linear-gradient(to bottom right, ${colors[currentColor]}, ${colors[(currentColor + 1) % colors.length]})`;
     }
 
-    setInterval(changeBackground, 5000);
+    setInterval(changeBackground, never);
 });

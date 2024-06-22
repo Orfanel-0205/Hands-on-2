@@ -3,8 +3,9 @@ body, html {
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background-color: #e0f7fa;
     overflow: hidden;
+    height: 100%;
+    background-color: #e0f7fa;
 }
 .breadcrumb {
     display: flex;
@@ -37,18 +38,9 @@ body, html {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to bottom right, #8bc34a, #33691e);
+    background: url('/assets/img/where-the-places-from-the-shrek-universe-are-being-located-v0-hmq4y1v1n16c1.jpg') no-repeat center center;
+    background-size: cover;
     color: #fff;
-    animation: backgroundAnimation 10s infinite alternate;
-}
-
-@keyframes backgroundAnimation {
-    0% {
-        background: linear-gradient(to bottom right, #8bc34a, #33691e);
-    }
-    100% {
-        background: linear-gradient(to bottom right, #33691e, #8bc34a);
-    }
 }
 
 .content {
