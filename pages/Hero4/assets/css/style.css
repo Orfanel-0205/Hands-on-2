@@ -63,7 +63,7 @@ body {
 }
 
 .hero-section {
-    background: url("../assets/img/Fokus-AI-Phonlamai-Shutterstock.jpg") no-repeat center center;
+    background: url("../img/Fokus-AI-Phonlamai-Shutterstock.jpg") no-repeat center center;
     background-size: cover;
     height: 100vh; 
     display: flex;

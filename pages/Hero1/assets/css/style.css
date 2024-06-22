@@ -55,7 +55,7 @@ body, html {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    background: rgba(0, 0, 0, 0.5); 
 }
 
 .hero-content {
@@ -99,7 +99,7 @@ body, html {
 
 .hero-buttons {
     display: flex;
-    gap: 20px; /* Adjust the gap as needed */
+    gap: 20px; 
 }
 
 .hero-buttons .btn {
