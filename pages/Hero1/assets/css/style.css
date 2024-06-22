@@ -1,103 +1,218 @@
-body, html {
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body, html {
     font-family: Arial, sans-serif;
-    overflow: hidden;
     height: 100%;
-    background-image: url(/assets/img/Screen202018-09-13204.49.36\ 20PM.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.breadcrumb {
-    align-self: flex-start;
-    margin-bottom: 20px;
-    font-size: 1rem;
-    color: #333;
-    background-color: #f8f9fa; 
-    padding: 10px 15px; 
-    border-radius: 5px; 
-    list-style: none; 
-    display: flex; 
-    gap: 10px; 
 }
 
+/* Breadcrumb navigation */
 .breadcrumb {
-    display: flex;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+}
+
+.breadcrumb ul {
     list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-    font-size: 1rem;
+    display: flex;
 }
 
-.breadcrumb li {
+.breadcrumb ul li {
     margin-right: 10px;
 }
 
-.breadcrumb a {
-    display: inline-block;
-    padding: 8px 15px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
+.breadcrumb ul li a {
     text-decoration: none;
-    border-radius: 5px;
+    color: #007bff;
 }
 
-.breadcrumb a:hover {
-    background-color: #0056b3;
-    text-decoration: none;
+.breadcrumb ul li a:hover {
+    text-decoration: underline;
 }
 
 
-.hero1 {
+.hero-section {
+    background-image: url('/assets/img/shuttered-dallas-mavericks-uxrlehi17bpxddzg.jpg');
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    
-}
-
-.content1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
     text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    background: rgba(0, 0, 0, 0.7);
-    
+    position: relative;
 }
 
-.image-container1 {
-   margin-top: 50%;
-    top: 16vh;
-    margin-bottom: 20px;
-    
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
 }
 
-.hero1-img {
+.hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
     width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards;
 }
 
-.text-container1 {
-    padding: 10px;
+.text-container {
+    max-width: 600px;
 }
 
-.text-container1 h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+.hero-title {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 0.5s forwards;
 }
 
-.text-container1 p {
-    font-size: 1.1em;
-    line-height: 1.6;
+.hero-subtitle {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 0.75s forwards;
+}
+
+.hero-description {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 1s forwards;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px; /* Adjust the gap as needed */
+}
+
+.hero-buttons .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 1.25s forwards;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    gap: .3rem;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+    border: none;
+    gap: .3rem;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-5px);
+}
+
+.image-container {
+    max-width: 600px;
+    padding: 20px;
+    opacity: 0;
+    transform: translateX(20px);
+    animation: fadeInLeft 1s ease-in-out 1s forwards;
+}
+
+.hero-img {
+    max-width: 100%;
+    height: auto;
 }
 
 
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .hero-title {
+        font-size: 2.5em;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2em;
+    }
+
+    .hero-description {
+        font-size: 1em;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons .btn {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .image-container {
+        padding: 0;
+    }
+}
 

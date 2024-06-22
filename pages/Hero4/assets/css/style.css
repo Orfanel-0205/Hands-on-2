@@ -1,102 +1,130 @@
-body, html {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
-    overflow: hidden;
-    height: 100%;
-    background-color: #e0f7fa;
-}
-.breadcrumb {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-    font-size: 1rem;
-}
-
-.breadcrumb li {
-    margin-right: 10px;
-}
-
-.breadcrumb a {
-    display: inline-block;
-    padding: 8px 15px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.breadcrumb a:hover {
-    background-color: #0056b3;
-    text-decoration: none;
-}
-
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: url('/assets/img/3ufetl77uds51.jpg') no-repeat center center;
-    background-size: cover;
-    color: #fff;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    animation: fadeIn 2s;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.image-container {
-    margin-bottom: 20px;
-    animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-30px);
-    }
-    60% {
-        transform: translateY(-15px);
-    }
-}
-
-.hero-img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-}
-
-.text-container {
-    padding: 10px;
-}
-
-.text-container h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.text-container p {
-    font-size: 1.1em;
     line-height: 1.6;
+    background-color: #f9f9f9;
+    margin: 0; /* Ensure no default margin */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 24px;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-btn {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-btn:hover {
+    background-color: #e55c00;
+}
+
+.hero-section {
+    background: url("/assets/img/Fokus-AI-Phonlamai-Shutterstock.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    color: #ffffffbe;
+    padding: 10px 0;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 1px;
+}
+
+.hero-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-tagline {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.hero-buttons .explore-btn,
+.hero-buttons .nft-btn {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.hero-buttons .explore-btn:hover,
+.hero-buttons .nft-btn:hover {
+    background-color: #e55c00;
+}
+
+footer {
+    
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.icons {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.icons i {
+    margin-right: 10px;
 }
