@@ -60,7 +60,7 @@
 The project aims to create an engaging web page with a captivating hero section and interactive animated cards. The hero component grabs users' attention instantly, while the cards offer dynamic hover effects to enhance user experience and encourage further exploration.
 
 ### Key Components
--static 
+ -static 
 - Hover
 - Navigations
 - Animations
