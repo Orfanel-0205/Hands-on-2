@@ -92,25 +92,21 @@ WD-Hands-on-2
 |   └─ js
 |       └─ script.js
 └─ pages
-|  └─ Card gallery
-|  |  └─ assets
-|  |   |  └─ css
-|  |   |    └─ style.css
-  |  |   |  
-|  |   |  └─ js
-|  |   |     └─ script.js
-|  |   └─ index.html
-└─ └─ Hero1
+|  └─ Hero1
 |  |  └─ assets
 |  |   |  └─ css
 |  |   |  |  └─ style.css
+|  |   |  └─ img
+|  |   |  |  └─ fileWith.jpeg/.jpg/.webp/.png
 |  |   |  └─ js
 |  |   |     └─ script.js
 |  |   └─ index.html
-|  └─ Hero2
+└─ └─ Hero2
 |  |  └─ assets
 |  |   |  └─ css
 |  |   |  |  └─ style.css
+|  |   |  └─ img
+|  |   |  |  └─ fileWith.jpeg/.jpg/.webp/.png
 |  |   |  └─ js
 |  |   |     └─ script.js
 |  |   └─ index.html
@@ -118,6 +114,8 @@ WD-Hands-on-2
 |  |  └─ assets
 |  |   |  └─ css
 |  |   |  |  └─ style.css
+|  |   |  └─ img
+|  |   |  |  └─ fileWith.jpeg/.jpg/.webp/.png
 |  |   |  └─ js
 |  |   |     └─ script.js
 |  |   └─ index.html
@@ -125,13 +123,26 @@ WD-Hands-on-2
 |  |  └─ assets
 |  |   |  └─ css
 |  |   |  |  └─ style.css
+|  |   |  └─ img
+|  |   |  |  └─ fileWith.jpeg/.jpg/.webp/.png
 |  |   |  └─ js
 |  |   |     └─ script.js
 |  |   └─ index.html
-└─ └─ Hero5
+|  └─ Hero5
+|  |  └─ assets
+|  |   |  └─ css
+|  |   |  |  └─ style.css
+|  |   |  └─ img
+|  |   |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|  |   |  └─ js
+|  |   |     └─ script.js
+|  |   └─ index.html
+└─ └─ Card-Gallery
 |     └─ assets
 |      |  └─ css
 |      |  |  └─ style.css
+|      |  └─ img
+|      |  |  └─ fileWith.jpeg/.jpg/.webp/.png
 |      |  └─ js
 |      |     └─ script.js
 |      └─ index.html
