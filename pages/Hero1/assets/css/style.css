@@ -1,4 +1,4 @@
-/* Reset some default styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body, html {
     height: 100%;
 }
 
-/* Breadcrumb navigation */
+
 .breadcrumb {
     background-color: #f8f8f8;
     padding: 10px 20px;

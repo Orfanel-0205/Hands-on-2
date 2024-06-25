@@ -1,28 +1,18 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body, html {
+body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-}
-
-header {
-    background-color: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 20px;
 }
 
 .breadcrumb ul {
     list-style: none;
-    display: flex;
+    padding: 0;
 }
 
 .breadcrumb ul li {
-    margin-right: 10px;
+    display: inline;
+    margin-right: 5px;
 }
 
 .breadcrumb ul li a {
@@ -30,31 +20,24 @@ header {
     color: #007bff;
 }
 
-.breadcrumb ul li a:hover {
-    text-decoration: underline;
-}
-
 .card-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
     gap: 20px;
+    justify-content: center;
 }
 
 .card {
-    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
     width: 300px;
-    margin: 20px;
-    animation: fadeIn 1s ease-in-out;
+    transition: transform 0.2s;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: scale(1.05);
 }
 
 .card .content {
@@ -62,114 +45,124 @@ header {
     text-align: center;
 }
 
-.card .image-container {
-    padding: 20px;
-    background-color: #f9f9f9;
+.image-container {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.card .hero-img {
+.image-container img {
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
 }
 
-.card .text-container h1 {
+.text-container {
+    padding: 10px;
+}
+
+.text-container h1 {
     font-size: 1.5em;
-    margin: 10px 0;
+    margin: 0.5em 0;
 }
 
-.card .text-container p {
+.text-container p {
+    font-size: 1em;
     color: #555;
 }
 
 
 .card1 {
-    border: 2px solid #ff0000;
-    animation: card1Anim 3s infinite;
+    background-color: black;
+    color: white;
+    border: 2px solid #d3d3d3;
 }
+
+.card1 .image-container {
+    background-color: #d3d3d3;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .card2 {
-    border: 2px solid #00ff00;
-    animation: card2Anim 3s infinite;
+    background: linear-gradient(135deg, #5F4B8BFF, #E69A8DFF);
+    border: 2px solid #ffcbcb;
+    box-shadow: 0 0 10px #ffcbcb;
 }
 
-.card3 {
-    border: 2px solid #0000ff;
-    animation: card3Anim 3s infinite;
+.card2 .image-container {
+    animation: bounce 2s infinite;
 }
 
-.card4 {
-    border: 2px solid #ffa500;
-    animation: card4Anim 3s infinite;
-}
-
-.card5 {
-    border: 2px solid #800080;
-    animation: card5Anim 3s infinite;
-}
-
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes card1Anim {
-    0%, 100% {
-        transform: rotate(0deg);
-    }
-    50% {
-        transform: rotate(10deg);
-    }
-}
-
-@keyframes card2Anim {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-}
-
-@keyframes card3Anim {
-    0%, 100% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(10px);
-    }
-}
-
-@keyframes card4Anim {
-    0%, 100% {
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
     }
-    50% {
-        transform: translateY(10px);
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
     }
 }
 
-@keyframes card5Anim {
-    0%, 100% {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    50% {
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
+.card2 .text-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
 }
 
 
-@media (max-width: 768px) {
-    .card-section {
-        flex-direction: column;
-        align-items: center;
-    }
+.card3 {
+    background: linear-gradient(135deg, #2C5F2D, #97BC62FF);
+}
 
-    .card {
-        width: 90%;
-    }
+.card3 .image-container {
+    transition: transform 1s;
+}
+
+.card3:hover .image-container {
+    transform: rotate(360deg);
+}
+
+.card3 .text-container p {
+    color: white;
+}
+
+
+.card4 .image-container, .card4 .text-container {
+    display: none;
+}
+
+.card4:hover .image-container, .card4:hover .text-container {
+    display: block;
+}
+
+
+.card5 {
+    background: linear-gradient(135deg, #00203FFF, #ADEFD1FF);
+    transform: perspective(600px);
+    transition: transform 0.6s;
+}
+
+.card5:hover {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card5 .content {
+    transition: opacity 0.6s;
+}
+
+.card5:hover .content {
+    opacity: 0;
+}
+
+.card5 .text-container h1, .card5 .text-container p {
+    color: white;
 }
