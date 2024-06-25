@@ -144,6 +144,17 @@ body {
     display: block;
 }
 
+.card4 .icon-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.card4 .icon-row i {
+    font-size: 24px;
+    color: #000;
+}
+
 
 .card5 {
     background: linear-gradient(135deg, #00203FFF, #ADEFD1FF);
