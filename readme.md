@@ -88,7 +88,7 @@ WD-Hands-on-2
 |   └─ css
 |   |   └─ style.css
 |   └─ img
-|   |   └─ fileWith.jpeg/.jpg/.webp/.png
+|   |   └─ fileWith.jpg/.png
 |   └─ js
 |       └─ script.js
 └─ pages
@@ -97,7 +97,7 @@ WD-Hands-on-2
 |  |   |  └─ css
 |  |   |  |  └─ style.css
 |  |   |  └─ img
-|  |   |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|  |   |  |  └─ fileWith.jpg/.png
 |  |   |  └─ js
 |  |   |     └─ script.js
 |  |   └─ index.html
@@ -106,7 +106,7 @@ WD-Hands-on-2
 |  |   |  └─ css
 |  |   |  |  └─ style.css
 |  |   |  └─ img
-|  |   |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|  |   |  |  └─ fileWith.jpg/.png
 |  |   |  └─ js
 |  |   |     └─ script.js
 |  |   └─ index.html
@@ -115,7 +115,7 @@ WD-Hands-on-2
 |  |   |  └─ css
 |  |   |  |  └─ style.css
 |  |   |  └─ img
-|  |   |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|  |   |  |  └─ fileWith.jpg/.png
 |  |   |  └─ js
 |  |   |     └─ script.js
 |  |   └─ index.html
@@ -124,7 +124,7 @@ WD-Hands-on-2
 |  |   |  └─ css
 |  |   |  |  └─ style.css
 |  |   |  └─ img
-|  |   |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|  |   |  |  └─ fileWith.jpg/.png
 |  |   |  └─ js
 |  |   |     └─ script.js
 |  |   └─ index.html
@@ -133,7 +133,7 @@ WD-Hands-on-2
 |  |   |  └─ css
 |  |   |  |  └─ style.css
 |  |   |  └─ img
-|  |   |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|  |   |  |  └─ fileWith.jpg/.png
 |  |   |  └─ js
 |  |   |     └─ script.js
 |  |   └─ index.html
@@ -142,7 +142,7 @@ WD-Hands-on-2
 |      |  └─ css
 |      |  |  └─ style.css
 |      |  └─ img
-|      |  |  └─ fileWith.jpeg/.jpg/.webp/.png
+|      |  |  └─ fileWith.jpg/.png
 |      |  └─ js
 |      |     └─ script.js
 |      └─ index.html
