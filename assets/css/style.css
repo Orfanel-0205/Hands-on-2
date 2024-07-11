@@ -40,7 +40,7 @@ header {
 
 .landing-container {
     background-image: url("../img/One-Punch-Man-World_Game-Review_EN_2.png");
-    background-size: cover;
+    background-size: cover 90rem;
     background-position: center;
     display: flex;
     justify-content: center;
