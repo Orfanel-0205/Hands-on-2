@@ -1,106 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 20px;
-}
-
-.breadcrumb ul {
-    list-style: none;
-    padding: 0;
-}
-
-.breadcrumb ul li {
-    display: inline;
-    margin-right: 5px;
-}
-
-.breadcrumb ul li a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-.card-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.card {
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    width: 300px;
-    transition: transform 0.2s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card .content {
-    padding: 20px;
-    text-align: center;
-}
-
-.image-container {
-    height: 200px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.image-container img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.text-container {
-    padding: 10px;
-}
-
-.text-container h1 {
-    font-size: 1.5em;
-    margin: 0.5em 0;
-}
-
-.text-container p {
-    font-size: 1em;
-    color: #555;
-}
-
-
-.card1 {
-    background-color: black;
-    color: white;
-    border: 2px solid #d3d3d3;
-}
-
-.card1 .image-container {
-    background-color: #d3d3d3;
-    width: 100%;
-    height: 200px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.card2 {
-    background: linear-gradient(135deg, #5F4B8BFF, #E69A8DFF);
-    border: 2px solid #ffcbcb;
-    box-shadow: 0 0 10px #ffcbcb;
-}
-
-.card2 .image-container {
-    animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
+@keyframes zoomBounce {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
     }
@@ -112,68 +10,172 @@ body {
     }
 }
 
-.card2 .text-container {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    border-radius: 5px;
+@keyframes colorChange {
+    0% { background-color: #ff5733; }
+    25% { background-color: #33c4ff; }
+    50% { background-color: #28a745; }
+    75% { background-color: #ffc107; }
+    100% { background-color: #6f42c1; }
 }
 
+@keyframes doorOpen {
+    0% {
+        transform: perspective(1000px) rotateY(90deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+}
+
+body {
+    background-image: url(../img/geometric-background-vector-white-cube-patterns_53876-126683.jpg);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.breadcrumb ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.breadcrumb li {
+    margin: 0 0.5rem;
+}
+
+.breadcrumb a {
+    color: white;
+    text-decoration: none;
+}
+
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card1 {
+    background-color: black;
+    width: 300px;
+    border: 2px solid #ff5733;
+    
+}
+
+.card1:hover {
+    animation: zoomBounce 1s;
+}
+
+.card2 {
+    width: 250px;
+    border: 2px solid #33c4ff;
+    border-radius: 16px;
+    animation: colorChange 5s infinite;
+}
 
 .card3 {
-    background: linear-gradient(135deg, #2C5F2D, #97BC62FF);
+    background-color: rgb(9, 187, 9);
+    width: 350px;
+    border: 2px solid #28a745;
+   
 }
 
-.card3 .image-container {
-    transition: transform 1s;
+.card4 {
+    width: 280px;
+    border: 2px  #ffc107;
+    background-color: #f8f9fa;
 }
 
-.card3:hover .image-container {
-    transform: rotate(360deg);
+.card4:hover .text-container {
+    display: block;
+    animation: doorOpen 1s;
 }
 
-.card3 .text-container p {
-    color: white;
-}
-
-
-.card4 .image-container, .card4 .text-container {
+.card4 .text-container {
     display: none;
 }
 
-.card4:hover .image-container, .card4:hover .text-container {
-    display: block;
+.card5 {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    border: 2px solid #00000034;
+    border-radius: 50px;
+    background-color: #e0e0e0;
+}
+.landscape-card .image-container {
+    flex: 1;
+}
+.card5 .content {
+    display: flex;
+    flex-direction: row;
+}
+
+.landscape-card .image-container,
+.landscape-card .text-container {
+    flex: 1;
+    padding: 1rem;
+}
+
+.card .content {
+    padding: 1rem;
+}
+
+.card .image-container {
+    text-align: center;
+}
+
+.card .hero-img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+}
+
+.card .text-container {
+    text-align: center;
+}
+
+.card .text-container h1 {
+    margin: 0.5rem 0;
+}
+
+.card .text-container p {
+    color: #666;
 }
 
 .card4 .icon-row {
     display: flex;
-    justify-content: space-around;
-    margin: 10px 0;
+    justify-content: center;
+    margin: 1rem 0;
 }
 
 .card4 .icon-row i {
-    font-size: 24px;
-    color: #000;
-}
-
-
-.card5 {
-    background: linear-gradient(135deg, #00203FFF, #ADEFD1FF);
-    transform: perspective(600px);
-    transition: transform 0.6s;
-}
-
-.card5:hover {
-    transform: perspective(600px) rotateY(180deg);
-}
-
-.card5 .content {
-    transition: opacity 0.6s;
-}
-
-.card5:hover .content {
-    opacity: 0;
-}
-
-.card5 .text-container h1, .card5 .text-container p {
-    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    color: #333;
 }
